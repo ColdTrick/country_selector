@@ -13,21 +13,23 @@
 
 	function country_selector_init(){
 		
-		if(is_plugin_enabled("profile_manager")){
+		if(elgg_is_active_plugin("profile_manager")){
 			// default profile options
-			$profileoptions = array();
-			$profileoptions["show_on_register"] = true;
-			$profileoptions["mandatory"] = true;
-			$profileoptions["user_editable"] = true;
-			$profileoptions["output_as_tags"] = false;
-			$profileoptions["admin_only"] = true;
-			$profileoptions["simple_search"] = true;
-			$profileoptions["advanced_search"] = true;
+			$profileoptions = array(
+				"show_on_register" => true,
+				"mandatory" => true,
+				"user_editable" => true,
+				"output_as_tags" => false,
+				"admin_only" => true,
+				"simple_search" => true,
+				"advanced_search" => true
+			);
 			
 			// default group options
-			$groupoptions = array();
-			$groupoptions["output_as_tags"] = false;
-			$groupoptions["admin_only"] = true;		
+			$groupoptions = array(
+				"output_as_tags" => false,
+				"admin_only" => true
+			);		
 			
 			// Add profile fields
 			add_custom_field_type("custom_profile_field_types", 'country', elgg_echo("country_selector:field_type:country"), $profileoptions);
@@ -41,6 +43,4 @@
 	}
 
 	// register default events
-	register_elgg_event_handler("init", "system", "country_selector_init");
-
-?>
+	elgg_register_event_handler("init", "system", "country_selector_init");

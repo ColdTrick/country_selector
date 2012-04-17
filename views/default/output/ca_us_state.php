@@ -12,5 +12,3 @@
 	*/
 
 	echo elgg_echo("state_code:" . strtolower($vars["value"]));
-
-?>

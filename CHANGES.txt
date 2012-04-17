@@ -1,0 +1,8 @@
+= Version History =
+x.x:
+
+- changed: made plugin Elgg 1.8 compatible
+
+0.1:
+
+- initial release

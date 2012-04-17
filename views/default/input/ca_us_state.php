@@ -11,18 +11,17 @@
 	* @version 0.1
 	*/
 
-	$internalname = $vars["internalname"];
-	$internalid = $vars["internalid"];
-	$js = $vars["js"];
-	$class = $vars["class"];
-	$value = $vars["value"]; 
-	
-	if(empty($class)){
-		$class = "input-pulldown";
+	if (isset($vars['class'])) {
+		$vars['class'] = "elgg-input-dropdown {$vars['class']}";
+	} else {
+		$vars['class'] = "elgg-input-dropdown";
 	}
+
+	$value = $vars['value'];
+	unset($vars['value']);
 	
 ?>
-<select id="<?php echo $internalid; ?>" name="<?php echo $internalname; ?>" <?php echo $js; ?> class="<?php echo $class; ?>">
+<select <?php echo elgg_format_attributes($vars); ?>>
 	<option value=""><?php echo elgg_echo("country_selector:input:ca_us_state:choose"); ?></option>
 	
 	<optgroup label="<?php echo elgg_echo("country_selector:input:ca_us_state:label:canada"); ?>">

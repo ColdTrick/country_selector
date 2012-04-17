@@ -12,5 +12,3 @@
 	*/
 
 	echo elgg_echo("country_code:" . strtolower($vars["value"]));
-
-?>
