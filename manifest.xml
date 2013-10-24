@@ -5,12 +5,14 @@
 	<version>1.0</version>
 	<description>Provides input/output views for Country and (US/Canada) States</description>
 	<website>http://www.coldtrick.com/</website>
-	<copyright>(C) ColdTrick IT Solutions 2009 - 2012</copyright>
-	<license>GNU Public License version 2</license>
+	<repository>https://github.com/ColdTrick/country_selector</repository>
+	<bugtracker>https://github.com/ColdTrick/country_selector/issues</bugtracker>
+	<copyright>(C) ColdTrick IT Solutions 2012</copyright>
+	<license>GNU General Public License version 2</license>
  	
  	<requires>
-		<type>elgg_version</type>
-		<version>2011123101</version>
+		<type>elgg_release</type>
+		<version>1.8</version>
 	</requires>
 	
 	<suggests>
