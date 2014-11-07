@@ -71,11 +71,11 @@
 		<option value="NC" <?php if(strtoupper($value) == "NC") echo "selected='selected'"; ?>><?php echo elgg_echo("state_code:nc"); ?></option>
 		<option value="ND" <?php if(strtoupper($value) == "ND") echo "selected='selected'"; ?>><?php echo elgg_echo("state_code:nd"); ?></option>
 		<option value="NE" <?php if(strtoupper($value) == "NE") echo "selected='selected'"; ?>><?php echo elgg_echo("state_code:ne"); ?></option>
-		<option value="NH" <?php if(strtoupper($value) == "NE") echo "selected='selected'"; ?>><?php echo elgg_echo("state_code:nh"); ?></option>
-		<option value="NJ" <?php if(strtoupper($value) == "NH") echo "selected='selected'"; ?>><?php echo elgg_echo("state_code:nj"); ?></option>
-		<option value="NM" <?php if(strtoupper($value) == "NJ") echo "selected='selected'"; ?>><?php echo elgg_echo("state_code:nm"); ?></option>
-		<option value="NV" <?php if(strtoupper($value) == "NM") echo "selected='selected'"; ?>><?php echo elgg_echo("state_code:nv"); ?></option>
-		<option value="NY" <?php if(strtoupper($value) == "MY") echo "selected='selected'"; ?>><?php echo elgg_echo("state_code:ny"); ?></option>
+		<option value="NH" <?php if(strtoupper($value) == "NH") echo "selected='selected'"; ?>><?php echo elgg_echo("state_code:nh"); ?></option>
+		<option value="NJ" <?php if(strtoupper($value) == "NJ") echo "selected='selected'"; ?>><?php echo elgg_echo("state_code:nj"); ?></option>
+		<option value="NM" <?php if(strtoupper($value) == "NM") echo "selected='selected'"; ?>><?php echo elgg_echo("state_code:nm"); ?></option>
+		<option value="NV" <?php if(strtoupper($value) == "NV") echo "selected='selected'"; ?>><?php echo elgg_echo("state_code:nv"); ?></option>
+		<option value="NY" <?php if(strtoupper($value) == "NY") echo "selected='selected'"; ?>><?php echo elgg_echo("state_code:ny"); ?></option>
 		<option value="OH" <?php if(strtoupper($value) == "OH") echo "selected='selected'"; ?>><?php echo elgg_echo("state_code:oh"); ?></option>
 		<option value="OK" <?php if(strtoupper($value) == "OK") echo "selected='selected'"; ?>><?php echo elgg_echo("state_code:ok"); ?></option>
 		<option value="OR" <?php if(strtoupper($value) == "OR") echo "selected='selected'"; ?>><?php echo elgg_echo("state_code:or"); ?></option>
